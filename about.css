@@ -1,0 +1,1032 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* ================= HEADER ================= */
+
+.about-header{
+
+    min-height: 70vh;
+
+    width: 100%;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+    url('campuswide3.jpg');
+
+    background-position: center;
+
+    background-size: cover;
+
+    position: relative;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+nav{
+
+    display: flex;
+
+    padding: 2% 6%;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.logo{
+
+    width: 200px;
+
+    height: auto;
+}
+
+
+.nav-links{
+
+    flex: 1;
+
+    text-align: right;
+}
+
+
+.nav-links ul li{
+
+    list-style: none;
+
+    display: inline-block;
+
+    padding: 8px 12px;
+
+    position: relative;
+}
+
+
+.nav-links ul li a{
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 500;
+}
+
+
+.nav-links ul li::after{
+
+    content: '';
+
+    width: 0%;
+
+    height: 2px;
+
+    background: #2373F4;
+
+    display: block;
+
+    margin: auto;
+
+    transition: 0.5s;
+}
+
+
+.nav-links ul li:hover::after{
+
+    width: 100%;
+}
+
+
+nav .fa{
+
+    display: none;
+}
+
+
+/* ================= PAGE TITLE ================= */
+
+.about-title{
+
+    position: absolute;
+
+    top: 55%;
+
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+
+    width: 90%;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+
+.about-title h1{
+
+    font-size: 52px;
+
+    color: #fff;
+
+    margin-bottom: 15px;
+}
+
+
+.about-title p{
+
+    color: #fff;
+
+    font-size: 15px;
+}
+
+
+/* ================= GENERAL ================= */
+
+.section-title{
+
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: auto;
+}
+
+
+.section-title span,
+.intro-text span,
+.vision-text span,
+.location-text span{
+
+    color: #2373F4;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+.section-title h1{
+
+    font-size: 36px;
+
+    color: #111;
+
+    margin: 12px 0;
+}
+
+
+p{
+
+    color: #666;
+
+    font-size: 14px;
+
+    font-weight: 300;
+
+    line-height: 1.8;
+}
+
+
+/* ================= INTRO ================= */
+
+.intro{
+
+    width: 80%;
+
+    margin: 100px auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+.intro-image{
+
+    flex-basis: 50%;
+}
+
+
+.intro-image img{
+
+    width: 100%;
+
+    height: 430px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    display: block;
+}
+
+
+.intro-text{
+
+    flex-basis: 50%;
+}
+
+
+.intro-text h1{
+
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    color: #111;
+
+    margin: 15px 0 20px;
+}
+
+
+.intro-text p{
+
+    margin-bottom: 18px;
+}
+
+
+/* ================= STORY ================= */
+
+.story{
+
+    background: #f5f8fc;
+
+    padding: 100px 10%;
+}
+
+
+.timeline{
+
+    max-width: 900px;
+
+    margin: 60px auto 0;
+}
+
+
+.timeline-item{
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 40px;
+
+    margin-bottom: 35px;
+}
+
+
+.year{
+
+    min-width: 110px;
+
+    height: 55px;
+
+    background: #2373F4;
+
+    color: #fff;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 17px;
+
+    font-weight: 600;
+}
+
+
+.timeline-content{
+
+    background: #fff;
+
+    padding: 25px 30px;
+
+    border-radius: 10px;
+
+    flex: 1;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+
+.timeline-content h3{
+
+    text-align: left;
+
+    color: #111;
+
+    margin: 0 0 10px;
+}
+
+
+/* ================= VISION ================= */
+
+.vision{
+
+    width: 80%;
+
+    margin: 110px auto;
+
+    display: flex;
+
+    align-items: stretch;
+
+    background: #f5f8fc;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+
+.vision-image{
+
+    flex-basis: 45%;
+}
+
+
+.vision-image img{
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 550px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.vision-text{
+
+    flex-basis: 55%;
+
+    padding: 60px;
+}
+
+
+.vision-text h1{
+
+    font-size: 36px;
+
+    line-height: 1.25;
+
+    color: #111;
+
+    margin: 15px 0;
+}
+
+
+.vision-points{
+
+    margin-top: 35px;
+}
+
+
+.vision-points > div{
+
+    display: grid;
+
+    grid-template-columns: 45px 1fr;
+
+    margin-bottom: 25px;
+}
+
+
+.vision-points i{
+
+    grid-row: span 2;
+
+    color: #2373F4;
+
+    font-size: 22px;
+
+    padding-top: 4px;
+}
+
+
+.vision-points h3{
+
+    text-align: left;
+
+    margin: 0 0 5px;
+
+    color: #111;
+}
+
+
+/* ================= LIFE ================= */
+
+.about-life{
+
+    width: 80%;
+
+    margin: auto;
+
+    padding-bottom: 100px;
+}
+
+
+.life-row{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-top: 50px;
+}
+
+
+.life-card{
+
+    flex-basis: 32%;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    background: #fff;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+
+.life-card:hover{
+
+    transform: translateY(-7px);
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+
+.life-card img{
+
+    width: 100%;
+
+    height: 260px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.life-card > div{
+
+    padding: 25px;
+}
+
+
+.life-card h3{
+
+    text-align: left;
+
+    color: #111;
+
+    margin: 0 0 10px;
+}
+
+
+/* ================= LOCATION ================= */
+
+.location{
+
+    width: 80%;
+
+    margin: 20px auto 110px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 60px;
+}
+
+
+.location-text{
+
+    flex-basis: 50%;
+}
+
+
+.location-text h1{
+
+    font-size: 36px;
+
+    line-height: 1.25;
+
+    color: #111;
+
+    margin: 15px 0 20px;
+}
+
+
+.location-text p{
+
+    margin-bottom: 25px;
+}
+
+
+.location-image{
+
+    flex-basis: 50%;
+}
+
+
+.location-image img{
+
+    width: 100%;
+
+    height: 380px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    display: block;
+}
+
+
+/* ================= BUTTON ================= */
+
+.blue-btn{
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: #fff;
+
+    background: #2373F4;
+
+    padding: 13px 25px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.blue-btn:hover{
+
+    background: #155ac4;
+}
+
+
+.hero-btn{
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: #fff;
+
+    border: 1px solid #fff;
+
+    padding: 12px 30px;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+
+.hero-btn:hover{
+
+    background: #2373F4;
+
+    border-color: #2373F4;
+}
+
+
+/* ================= CTA ================= */
+
+.cta{
+
+    width: 80%;
+
+    margin: 0 auto 100px;
+
+    padding: 90px 20px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
+    url('campuswide.jpg');
+
+    background-position: center;
+
+    background-size: cover;
+}
+
+
+.cta h1{
+
+    color: #fff;
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
+}
+
+
+.cta p{
+
+    color: #fff;
+
+    margin-bottom: 25px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer{
+
+    background: #08111f;
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 50px 20px 25px;
+}
+
+
+.footer h4{
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+
+.footer p{
+
+    color: #aeb7c4;
+
+    margin-bottom: 25px;
+}
+
+
+.footer-links{
+
+    margin-bottom: 25px;
+}
+
+
+.footer-links a{
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    margin: 0 12px;
+
+    transition: 0.3s;
+}
+
+
+.footer-links a:hover{
+
+    color: #2373F4;
+}
+
+
+.icons{
+
+    margin-bottom: 25px;
+}
+
+
+.footer .icons i{
+
+    color: #2373F4;
+
+    font-size: 18px;
+
+    margin: 0 10px;
+
+    transition: 0.3s;
+}
+
+
+.footer .icons i:hover{
+
+    color: #fff;
+
+    transform: translateY(-3px);
+}
+
+
+.footer .copyright{
+
+    font-size: 13px;
+
+    margin: 0;
+}
+
+
+.footer .fa-heart{
+
+    color: #f44336;
+
+    margin: 0 4px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px){
+
+    .logo{
+
+        width: 160px;
+    }
+
+
+    .nav-links{
+
+        position: absolute;
+
+        background: #2373F4;
+
+        height: 100vh;
+
+        width: 200px;
+
+        top: 0;
+
+        right: -200px;
+
+        text-align: left;
+
+        z-index: 2;
+
+        transition: 1s;
+    }
+
+
+    .nav-links ul li{
+
+        display: block;
+    }
+
+
+    nav .fa{
+
+        display: block;
+
+        color: #fff;
+
+        margin: 10px;
+
+        font-size: 22px;
+
+        cursor: pointer;
+    }
+
+
+    .nav-links ul{
+
+        padding: 30px;
+    }
+
+
+    .about-header{
+
+        min-height: 55vh;
+    }
+
+
+    .about-title h1{
+
+        font-size: 32px;
+    }
+
+
+    .about-title p{
+
+        font-size: 13px;
+    }
+
+
+    .intro{
+
+        width: 85%;
+
+        flex-direction: column;
+
+        gap: 35px;
+
+        margin: 70px auto;
+    }
+
+
+    .intro-image,
+    .intro-text{
+
+        flex-basis: 100%;
+
+        width: 100%;
+    }
+
+
+    .intro-image img{
+
+        height: 280px;
+    }
+
+
+    .intro-text h1{
+
+        font-size: 30px;
+    }
+
+
+    .section-title h1{
+
+        font-size: 28px;
+    }
+
+
+    .story{
+
+        padding: 70px 7%;
+    }
+
+
+    .timeline-item{
+
+        gap: 15px;
+    }
+
+
+    .year{
+
+        min-width: 75px;
+
+        height: 45px;
+
+        font-size: 13px;
+    }
+
+
+    .timeline-content{
+
+        padding: 20px;
+    }
+
+
+    .timeline-content h3{
+
+        font-size: 16px;
+    }
+
+
+    .vision{
+
+        width: 85%;
+
+        flex-direction: column;
+
+        margin: 70px auto;
+    }
+
+
+    .vision-image,
+    .vision-text{
+
+        flex-basis: 100%;
+
+        width: 100%;
+    }
+
+
+    .vision-image img{
+
+        min-height: 280px;
+
+        height: 280px;
+    }
+
+
+    .vision-text{
+
+        padding: 35px 25px;
+    }
+
+
+    .vision-text h1{
+
+        font-size: 29px;
+    }
+
+
+    .about-life{
+
+        width: 85%;
+
+        padding-bottom: 70px;
+    }
+
+
+    .life-row{
+
+        flex-direction: column;
+    }
+
+
+    .life-card{
+
+        margin-bottom: 20px;
+    }
+
+
+    .location{
+
+        width: 85%;
+
+        flex-direction: column;
+
+        gap: 35px;
+
+        margin-bottom: 70px;
+    }
+
+
+    .location-text,
+    .location-image{
+
+        flex-basis: 100%;
+
+        width: 100%;
+    }
+
+
+    .location-text h1{
+
+        font-size: 29px;
+    }
+
+
+    .location-image img{
+
+        height: 280px;
+    }
+
+
+    .cta{
+
+        width: 85%;
+
+        padding: 70px 15px;
+
+        margin-bottom: 70px;
+    }
+
+
+    .cta h1{
+
+        font-size: 27px;
+    }
+
+
+    .footer-links a{
+
+        display: inline-block;
+
+        margin: 5px 8px;
+    }
+
+}

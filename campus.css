@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER & NAVIGATION
+========================= */
+
+.header {
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),
+                      url("campusHero.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 25px 7%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 145px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 32px;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.nav-links ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #2373F4;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+
+.nav-links ul li a:hover::after {
+    width: 100%;
+}
+
+nav > .fa {
+    display: none;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.campus-hero {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+}
+
+.campus-hero h1 {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.campus-hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+
+/* =========================
+   INTRODUCTION
+========================= */
+
+.intro {
+    width: 80%;
+    margin: auto;
+    padding: 90px 0 70px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.intro p {
+    max-width: 780px;
+    margin: auto;
+    color: #666;
+    font-size: 15px;
+}
+
+
+/* =========================
+   MAIN CAMPUS
+========================= */
+
+.campus-main {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 40px 0 100px;
+}
+
+.campus-image {
+    flex: 1;
+}
+
+.campus-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.campus-text {
+    flex: 1;
+}
+
+.campus-text span,
+.facility-text span,
+.student-overlay span,
+.community-text span {
+    color: #2373F4;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.campus-text h2,
+.facility-text h2,
+.community-text h2 {
+    font-size: 34px;
+    line-height: 1.3;
+    margin: 12px 0 20px;
+    color: #111;
+}
+
+.campus-text p,
+.facility-text p,
+.community-text p {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   FACILITIES
+========================= */
+
+.facility-section {
+    width: 100%;
+    padding: 100px 7%;
+    background: #f5f8fc;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.facility-section.reverse {
+    background: white;
+}
+
+.facility-text {
+    flex: 1;
+}
+
+.facility-image {
+    flex: 1;
+}
+
+.facility-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+
+/* =========================
+   STUDENT LIFE
+========================= */
+
+.student-life {
+    width: 100%;
+    min-height: 470px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
+                      url("studentSpaces.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.student-overlay {
+    width: 80%;
+    color: white;
+}
+
+.student-overlay span {
+    color: #8dbdff;
+}
+
+.student-overlay h2 {
+    font-size: 40px;
+    margin: 12px 0 18px;
+}
+
+.student-overlay p {
+    max-width: 650px;
+    margin: auto auto 30px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+/* =========================
+   COMMUNITY
+========================= */
+
+.community {
+    width: 85%;
+    margin: auto;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+
+.community-image {
+    flex: 1;
+}
+
+.community-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.community-text {
+    flex: 1;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.campus-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 28px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.campus-btn:hover {
+    background: #2373F4;
+    border-color: #2373F4;
+}
+
+
+/* =========================
+   CAMPUS HIGHLIGHTS
+========================= */
+
+.highlights {
+    padding: 90px 7%;
+    text-align: center;
+    background: #f5f8fc;
+}
+
+.highlights h2 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.highlight-intro {
+    color: #666;
+    font-size: 15px;
+    max-width: 650px;
+    margin: 0 auto 50px;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.highlight-card {
+    padding: 35px 25px;
+    background: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.highlight-card:hover {
+    transform: translateY(-7px);
+}
+
+.highlight-card i {
+    font-size: 28px;
+    color: #2373F4;
+    margin-bottom: 18px;
+}
+
+.highlight-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.highlight-card p {
+    color: #666;
+    font-size: 13px;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.campus-cta {
+    padding: 90px 7%;
+    background: #2373F4;
+    text-align: center;
+    color: white;
+}
+
+.campus-cta h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.campus-cta p {
+    font-size: 15px;
+    margin-bottom: 28px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #08111f;
+    color: white;
+    text-align: center;
+    padding: 55px 7% 30px;
+}
+
+footer h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+footer p {
+    max-width: 600px;
+    margin: auto;
+    color: #aeb8c5;
+    font-size: 13px;
+}
+
+.footer-line {
+    width: 80%;
+    height: 1px;
+    background: #263242;
+    margin: 35px auto 20px;
+}
+
+footer .copyright {
+    font-size: 12px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        min-height: 65vh;
+    }
+
+    nav {
+        padding: 20px 6%;
+    }
+
+    nav img {
+        width: 125px;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: #2373F4;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+    .nav-links ul {
+        padding: 60px 25px;
+    }
+
+    .nav-links ul li {
+        display: block;
+        margin: 25px 0;
+    }
+
+    .nav-links ul li a {
+        font-size: 13px;
+    }
+
+    nav > .fa {
+        display: block;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links .fa {
+        display: block;
+        color: white;
+        font-size: 22px;
+        margin: 20px;
+        cursor: pointer;
+    }
+
+
+    /* Hero */
+
+    .campus-hero h1 {
+        font-size: 36px;
+    }
+
+    .campus-hero p {
+        font-size: 14px;
+    }
+
+
+    /* Intro */
+
+    .intro {
+        width: 88%;
+        padding: 65px 0 50px;
+    }
+
+    .intro h2 {
+        font-size: 27px;
+    }
+
+
+    /* Main Campus */
+
+    .campus-main {
+        width: 88%;
+        display: block;
+        padding-bottom: 70px;
+    }
+
+    .campus-image img {
+        height: 280px;
+        margin-bottom: 35px;
+    }
+
+    .campus-text h2,
+    .facility-text h2,
+    .community-text h2 {
+        font-size: 28px;
+    }
+
+
+    /* Facilities */
+
+    .facility-section,
+    .facility-section.reverse {
+        display: flex;
+        flex-direction: column;
+        padding: 70px 7%;
+        gap: 35px;
+    }
+
+    .facility-section.reverse .facility-image {
+        order: -1;
+    }
+
+    .facility-image img {
+        height: 280px;
+    }
+
+
+    /* Student Life */
+
+    .student-life {
+        min-height: 420px;
+    }
+
+    .student-overlay h2 {
+        font-size: 30px;
+    }
+
+
+    /* Community */
+
+    .community {
+        width: 88%;
+        display: flex;
+        flex-direction: column;
+        padding: 70px 0;
+        gap: 35px;
+    }
+
+    .community-image img {
+        height: 280px;
+    }
+
+
+    /* Highlights */
+
+    .highlight-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .highlights {
+        padding: 70px 7%;
+    }
+
+    .highlights h2 {
+        font-size: 29px;
+    }
+
+
+    /* CTA */
+
+    .campus-cta {
+        padding: 70px 7%;
+    }
+
+    .campus-cta h2 {
+        font-size: 29px;
+    }
+
+}

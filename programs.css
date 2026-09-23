@@ -1,0 +1,791 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* ================= HERO ================= */
+
+.programs-header{
+    min-height: 70vh;
+    width: 100%;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),
+    url('programsHero.jpg');
+
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo{
+    width: 200px;
+    height: auto;
+}
+
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #2373F4;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+nav .fa{
+    display: none;
+}
+
+
+/* ================= HERO TITLE ================= */
+
+.programs-title{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    width: 90%;
+    text-align: center;
+
+    color: #fff;
+}
+
+
+.programs-title h1{
+    font-size: 52px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+
+.programs-title p{
+    color: #fff;
+    font-size: 15px;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+
+/* ================= GENERAL ================= */
+
+.section-title{
+    text-align: center;
+    max-width: 750px;
+    margin: auto;
+}
+
+
+.section-title span,
+.program-text span,
+.project-text span{
+    color: #2373F4;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
+.section-title h1{
+    font-size: 36px;
+    color: #111;
+    margin: 12px 0;
+}
+
+
+p{
+    color: #666;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+
+/* ================= INTRO ================= */
+
+.program-intro{
+    width: 80%;
+    margin: 100px auto 70px;
+}
+
+
+/* ================= PROGRAM SECTIONS ================= */
+
+.program-section{
+    width: 80%;
+    margin: 0 auto 110px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+.program-section.reverse{
+    flex-direction: row-reverse;
+}
+
+
+.program-image{
+    flex-basis: 50%;
+}
+
+
+.program-image img{
+    width: 100%;
+    height: 470px;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+
+    display: block;
+}
+
+
+.program-text{
+    flex-basis: 50%;
+}
+
+
+.program-text h1{
+    color: #111;
+    font-size: 36px;
+    line-height: 1.25;
+
+    margin: 15px 0 20px;
+}
+
+
+.program-text > p{
+    margin-bottom: 15px;
+}
+
+
+/* ================= PROGRAM POINTS ================= */
+
+.program-points{
+    margin-top: 30px;
+}
+
+
+.program-points > div{
+    display: grid;
+    grid-template-columns: 45px 1fr;
+
+    margin-bottom: 22px;
+}
+
+
+.program-points i{
+    grid-row: span 2;
+
+    color: #2373F4;
+
+    font-size: 20px;
+
+    padding-top: 5px;
+}
+
+
+.program-points h3{
+    color: #111;
+
+    font-size: 16px;
+
+    margin-bottom: 4px;
+}
+
+
+.program-points p{
+    font-size: 13px;
+}
+
+
+/* ================= PROJECT SECTION ================= */
+
+.project-section{
+    width: 80%;
+    margin: 0 auto 110px;
+
+    display: flex;
+    align-items: stretch;
+
+    background: #f5f8fc;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+
+.project-image{
+    flex-basis: 50%;
+}
+
+
+.project-image img{
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.project-text{
+    flex-basis: 50%;
+
+    padding: 55px;
+}
+
+
+.project-text h1{
+    color: #111;
+
+    font-size: 36px;
+    line-height: 1.25;
+
+    margin: 15px 0 20px;
+}
+
+
+.project-text p{
+    margin-bottom: 15px;
+}
+
+
+.project-subtitle{
+    color: #111;
+
+    font-size: 18px;
+
+    margin: 25px 0 18px;
+}
+
+
+.project-points > div{
+    display: grid;
+
+    grid-template-columns: 40px 1fr;
+
+    margin-bottom: 18px;
+}
+
+
+.project-points i{
+    color: #2373F4;
+
+    font-size: 18px;
+
+    padding-top: 4px;
+}
+
+
+.project-points h3{
+    color: #111;
+
+    font-size: 14px;
+
+    margin-bottom: 3px;
+}
+
+
+.project-points p{
+    font-size: 12px;
+
+    margin: 0;
+}
+
+
+/* ================= INNOVATION ================= */
+
+.innovation{
+    background: #f5f8fc;
+
+    padding: 100px 10%;
+}
+
+
+.innovation-row{
+    max-width: 1100px;
+
+    margin: 60px auto 0;
+
+    display: flex;
+
+    align-items: stretch;
+
+    gap: 60px;
+}
+
+
+.innovation-image{
+    flex-basis: 50%;
+}
+
+
+.innovation-image img{
+    width: 100%;
+
+    height: 430px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    display: block;
+}
+
+
+.innovation-content{
+    flex-basis: 50%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.innovation-box{
+    display: grid;
+
+    grid-template-columns: 50px 1fr;
+
+    margin-bottom: 30px;
+}
+
+
+.innovation-box i{
+    color: #2373F4;
+
+    font-size: 23px;
+
+    padding-top: 3px;
+}
+
+
+.innovation-box h3{
+    color: #111;
+
+    margin-bottom: 6px;
+
+    font-size: 17px;
+}
+
+
+.innovation-box p{
+    font-size: 13px;
+}
+
+
+/* ================= CTA ================= */
+
+.cta{
+    width: 80%;
+
+    margin: 100px auto;
+
+    padding: 90px 20px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
+    url('innovationLab.jpg');
+
+    background-position: center;
+
+    background-size: cover;
+}
+
+
+.cta h1{
+    color: #fff;
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
+}
+
+
+.cta p{
+    color: #fff;
+
+    margin-bottom: 25px;
+}
+
+
+.hero-btn{
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: #fff;
+
+    border: 1px solid #fff;
+
+    padding: 12px 30px;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+
+.hero-btn:hover{
+    background: #2373F4;
+
+    border-color: #2373F4;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer{
+    background: #08111f;
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 50px 20px 25px;
+}
+
+
+.footer h4{
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+
+.footer p{
+    color: #aeb7c4;
+
+    margin-bottom: 25px;
+}
+
+
+.footer-links{
+    margin-bottom: 25px;
+}
+
+
+.footer-links a{
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    margin: 0 12px;
+
+    transition: 0.3s;
+}
+
+
+.footer-links a:hover{
+    color: #2373F4;
+}
+
+
+.icons{
+    margin-bottom: 25px;
+}
+
+
+.footer .icons i{
+    color: #2373F4;
+
+    font-size: 18px;
+
+    margin: 0 10px;
+
+    transition: 0.3s;
+}
+
+
+.footer .icons i:hover{
+    color: #fff;
+
+    transform: translateY(-3px);
+}
+
+
+.footer .copyright{
+    font-size: 13px;
+
+    margin: 0;
+}
+
+
+.footer .fa-heart{
+    color: #f44336;
+
+    margin: 0 4px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px){
+
+    .logo{
+        width: 160px;
+    }
+
+
+    .nav-links{
+        position: absolute;
+
+        background: #2373F4;
+
+        height: 100vh;
+
+        width: 200px;
+
+        top: 0;
+
+        right: -200px;
+
+        text-align: left;
+
+        z-index: 2;
+
+        transition: 1s;
+    }
+
+
+    .nav-links ul li{
+        display: block;
+    }
+
+
+    nav .fa{
+        display: block;
+
+        color: #fff;
+
+        margin: 10px;
+
+        font-size: 22px;
+
+        cursor: pointer;
+    }
+
+
+    .nav-links ul{
+        padding: 30px;
+    }
+
+
+    .programs-header{
+        min-height: 55vh;
+    }
+
+
+    .programs-title h1{
+        font-size: 32px;
+    }
+
+
+    .programs-title p{
+        font-size: 13px;
+    }
+
+
+    .program-intro{
+        width: 85%;
+
+        margin: 70px auto 50px;
+    }
+
+
+    .section-title h1{
+        font-size: 28px;
+    }
+
+
+    .program-section{
+        width: 85%;
+
+        flex-direction: column;
+
+        gap: 35px;
+
+        margin-bottom: 75px;
+    }
+
+
+    .program-section.reverse{
+        flex-direction: column;
+    }
+
+
+    .program-image,
+    .program-text{
+        flex-basis: 100%;
+
+        width: 100%;
+    }
+
+
+    .program-image img{
+        height: 280px;
+    }
+
+
+    .program-text h1{
+        font-size: 29px;
+    }
+
+
+    .program-points{
+        margin-top: 25px;
+    }
+
+
+    .project-section{
+        width: 85%;
+
+        flex-direction: column;
+
+        margin-bottom: 75px;
+    }
+
+
+    .project-image,
+    .project-text{
+        flex-basis: 100%;
+
+        width: 100%;
+    }
+
+
+    .project-image img{
+        height: 280px;
+
+        min-height: 0;
+    }
+
+
+    .project-text{
+        padding: 35px 25px;
+    }
+
+
+    .project-text h1{
+        font-size: 29px;
+    }
+
+
+    .innovation{
+        padding: 70px 7%;
+    }
+
+
+    .innovation-row{
+        flex-direction: column;
+
+        gap: 35px;
+
+        margin-top: 40px;
+    }
+
+
+    .innovation-image,
+    .innovation-content{
+        flex-basis: 100%;
+
+        width: 100%;
+    }
+
+
+    .innovation-image img{
+        height: 280px;
+    }
+
+
+    .innovation-box{
+        grid-template-columns: 40px 1fr;
+
+        margin-bottom: 25px;
+    }
+
+
+    .cta{
+        width: 85%;
+
+        padding: 70px 15px;
+
+        margin: 70px auto;
+    }
+
+
+    .cta h1{
+        font-size: 27px;
+    }
+
+
+    .footer-links a{
+        display: inline-block;
+
+        margin: 5px 8px;
+    }
+
+}
