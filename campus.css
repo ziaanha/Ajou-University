@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -10,10 +11,25 @@ body {
     line-height: 1.6;
 }
 
+/* INDEPENDENT PROJECT NOTICE */
 
-/* =========================
-   HEADER & NAVIGATION
-========================= */
+.project-notice {
+    width: 100%;
+    padding: 12px 20px;
+    background: #f1f5fb;
+    color: #39465a;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.project-notice a {
+    color: #155dcc;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+/* HEADER & NAVIGATION */
 
 .header {
     min-height: 70vh;
@@ -72,10 +88,7 @@ nav > .fa {
     display: none;
 }
 
-
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .campus-hero {
     width: 90%;
@@ -100,10 +113,7 @@ nav > .fa {
     font-weight: 300;
 }
 
-
-/* =========================
-   INTRODUCTION
-========================= */
+/* INTRODUCTION */
 
 .intro {
     width: 80%;
@@ -125,10 +135,7 @@ nav > .fa {
     font-size: 15px;
 }
 
-
-/* =========================
-   MAIN CAMPUS
-========================= */
+/* MAIN CAMPUS */
 
 .campus-main {
     width: 85%;
@@ -139,8 +146,14 @@ nav > .fa {
     padding: 40px 0 100px;
 }
 
-.campus-image {
+.campus-image,
+.campus-text,
+.facility-text,
+.facility-image,
+.community-image,
+.community-text {
     flex: 1;
+    min-width: 0;
 }
 
 .campus-image img {
@@ -148,10 +161,7 @@ nav > .fa {
     height: 430px;
     object-fit: cover;
     border-radius: 8px;
-}
-
-.campus-text {
-    flex: 1;
+    display: block;
 }
 
 .campus-text span,
@@ -181,10 +191,7 @@ nav > .fa {
     margin-bottom: 15px;
 }
 
-
-/* =========================
-   FACILITIES
-========================= */
+/* FACILITIES */
 
 .facility-section {
     width: 100%;
@@ -199,14 +206,6 @@ nav > .fa {
     background: white;
 }
 
-.facility-text {
-    flex: 1;
-}
-
-.facility-image {
-    flex: 1;
-}
-
 .facility-image img {
     width: 100%;
     height: 400px;
@@ -215,10 +214,7 @@ nav > .fa {
     display: block;
 }
 
-
-/* =========================
-   STUDENT LIFE
-========================= */
+/* STUDENT LIFE */
 
 .student-life {
     width: 100%;
@@ -254,10 +250,7 @@ nav > .fa {
     font-weight: 300;
 }
 
-
-/* =========================
-   COMMUNITY
-========================= */
+/* COMMUNITY */
 
 .community {
     width: 85%;
@@ -268,10 +261,6 @@ nav > .fa {
     gap: 65px;
 }
 
-.community-image {
-    flex: 1;
-}
-
 .community-image img {
     width: 100%;
     height: 400px;
@@ -280,14 +269,7 @@ nav > .fa {
     display: block;
 }
 
-.community-text {
-    flex: 1;
-}
-
-
-/* =========================
-   BUTTON
-========================= */
+/* BUTTON */
 
 .campus-btn {
     display: inline-block;
@@ -305,10 +287,7 @@ nav > .fa {
     border-color: #2373F4;
 }
 
-
-/* =========================
-   CAMPUS HIGHLIGHTS
-========================= */
+/* HIGHLIGHTS */
 
 .highlights {
     padding: 90px 7%;
@@ -361,10 +340,7 @@ nav > .fa {
     font-size: 13px;
 }
 
-
-/* =========================
-   CTA
-========================= */
+/* CTA */
 
 .campus-cta {
     padding: 90px 7%;
@@ -383,10 +359,7 @@ nav > .fa {
     margin-bottom: 28px;
 }
 
-
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer {
     background: #08111f;
@@ -396,7 +369,7 @@ footer {
 }
 
 footer h3 {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 12px;
 }
 
@@ -418,13 +391,9 @@ footer .copyright {
     font-size: 12px;
 }
 
-
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media (max-width: 768px) {
-
     .header {
         min-height: 65vh;
     }
@@ -477,9 +446,6 @@ footer .copyright {
         cursor: pointer;
     }
 
-
-    /* Hero */
-
     .campus-hero h1 {
         font-size: 36px;
     }
@@ -487,9 +453,6 @@ footer .copyright {
     .campus-hero p {
         font-size: 14px;
     }
-
-
-    /* Intro */
 
     .intro {
         width: 88%;
@@ -499,9 +462,6 @@ footer .copyright {
     .intro h2 {
         font-size: 27px;
     }
-
-
-    /* Main Campus */
 
     .campus-main {
         width: 88%;
@@ -520,9 +480,6 @@ footer .copyright {
         font-size: 28px;
     }
 
-
-    /* Facilities */
-
     .facility-section,
     .facility-section.reverse {
         display: flex;
@@ -539,9 +496,6 @@ footer .copyright {
         height: 280px;
     }
 
-
-    /* Student Life */
-
     .student-life {
         min-height: 420px;
     }
@@ -549,9 +503,6 @@ footer .copyright {
     .student-overlay h2 {
         font-size: 30px;
     }
-
-
-    /* Community */
 
     .community {
         width: 88%;
@@ -565,9 +516,6 @@ footer .copyright {
         height: 280px;
     }
 
-
-    /* Highlights */
-
     .highlight-grid {
         grid-template-columns: 1fr;
     }
@@ -580,9 +528,6 @@ footer .copyright {
         font-size: 29px;
     }
 
-
-    /* CTA */
-
     .campus-cta {
         padding: 70px 7%;
     }
@@ -591,4 +536,8 @@ footer .copyright {
         font-size: 29px;
     }
 
+    .project-notice {
+        font-size: 11px;
+        padding: 10px 14px;
+    }
 }

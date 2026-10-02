@@ -1,10 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="An independent student-created educational project exploring Ajou University, its history, academic environment, and campus life.">
+
+    <meta name="robots" content="index, follow">
 
     <link rel="stylesheet" href="about.css">
 
@@ -15,12 +19,26 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 
-    <title>About | Ajou University</title>
-
+    <title>About Ajou University | Independent Student Project</title>
 </head>
 
-
 <body>
+
+<!-- ================= PROJECT DISCLOSURE ================= -->
+
+<div class="project-notice">
+    <strong>Independent Student Project</strong>
+
+    <p>
+        This website is an independent educational project created by a student.
+        It is not affiliated with, endorsed by, or operated by Ajou University.
+        Information is provided for educational and informational purposes only.
+    </p>
+
+    <a href="https://www.ajou.ac.kr/en/" target="_blank" rel="noopener noreferrer">
+        Visit Ajou University's Official Website
+    </a>
+</div>
 
 
 <!-- ================= HEADER ================= -->
@@ -29,37 +47,35 @@
 
     <nav>
 
-        <a href="index.html">
-            <img class="logo" src="AjouLogo1.png" alt="Ajou University">
+        <a href="index.html" aria-label="Project home">
+            <img class="logo" src="AjouLogo1.png" alt="Ajou University logo used in an independent student project">
         </a>
 
         <div class="nav-links" id="navLinks">
 
-            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <i class="fa fa-times" onclick="hideMenu()" aria-label="Close navigation"></i>
 
             <ul>
-
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="programs.html">PROGRAMS</a></li>
                 <li><a href="campus.html">CAMPUS</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
-
             </ul>
 
         </div>
 
-        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <i class="fa fa-bars" onclick="showMenu()" aria-label="Open navigation"></i>
 
     </nav>
-
 
     <div class="about-title">
 
         <h1>About Ajou University</h1>
 
         <p>
-            Discover our history, values and vision for the future.
+            Explore the university's history, academic environment,
+            and development.
         </p>
 
     </div>
@@ -67,18 +83,13 @@
 </section>
 
 
-
 <!-- ================= INTRODUCTION ================= -->
 
 <section class="intro">
 
     <div class="intro-image">
-
-        <img src="campuswide.jpg"
-             alt="Ajou University campus">
-
+        <img src="campuswide.jpg" alt="Campus view featured in this educational project">
     </div>
-
 
     <div class="intro-text">
 
@@ -94,15 +105,14 @@
         </p>
 
         <p>
-            Today, the university offers a diverse academic environment
-            spanning engineering, information technology, natural
-            sciences, business, humanities and other fields.
+            The university's academic environment spans engineering,
+            information technology, natural sciences, business,
+            humanities and other fields.
         </p>
 
     </div>
 
 </section>
-
 
 
 <!-- ================= OUR STORY ================= -->
@@ -116,21 +126,17 @@
         <h1>From Engineering to a Global University</h1>
 
         <p>
-            Ajou's journey began with a strong foundation in
-            engineering and technology.
+            An overview of Ajou's development from its early
+            engineering-focused beginnings.
         </p>
 
     </div>
 
-
     <div class="timeline">
-
 
         <div class="timeline-item">
 
-            <div class="year">
-                1973
-            </div>
+            <div class="year">1973</div>
 
             <div class="timeline-content">
 
@@ -146,12 +152,9 @@
 
         </div>
 
-
         <div class="timeline-item">
 
-            <div class="year">
-                1981
-            </div>
+            <div class="year">1981</div>
 
             <div class="timeline-content">
 
@@ -167,12 +170,9 @@
 
         </div>
 
-
         <div class="timeline-item">
 
-            <div class="year">
-                Today
-            </div>
+            <div class="year">Today</div>
 
             <div class="timeline-content">
 
@@ -188,11 +188,9 @@
 
         </div>
 
-
     </div>
 
 </section>
-
 
 
 <!-- ================= VISION ================= -->
@@ -201,56 +199,46 @@
 
     <div class="vision-image">
 
-        <img src="engineeringlab.jpg"
-             alt="Students working on technology">
+        <img src="engineeringlab.jpg" alt="Technology and engineering learning environment">
 
     </div>
 
-
     <div class="vision-text">
 
-        <span>OUR VISION</span>
+        <span>ACADEMIC ENVIRONMENT</span>
 
         <h1>Knowledge That Creates Possibilities</h1>
 
         <p>
-            At Ajou, education goes beyond the classroom.
-            Students are encouraged to explore ideas, develop
-            practical skills and engage with the challenges
-            of the future.
+            Education extends beyond the classroom.
+            Students can explore ideas, develop practical skills
+            and engage with the challenges of the future.
         </p>
 
         <div class="vision-points">
 
             <div>
-
-                <i class="fa-solid fa-lightbulb"></i>
+                <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
 
                 <h3>Innovation</h3>
 
                 <p>
-                    Encouraging curiosity, creativity and new ideas.
+                    Exploring creativity, curiosity and new ideas.
                 </p>
-
             </div>
 
-
             <div>
-
-                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-globe" aria-hidden="true"></i>
 
                 <h3>Global Engagement</h3>
 
                 <p>
                     Connecting people, cultures and academic communities.
                 </p>
-
             </div>
 
-
             <div>
-
-                <i class="fa-solid fa-flask"></i>
+                <i class="fa-solid fa-flask" aria-hidden="true"></i>
 
                 <h3>Research</h3>
 
@@ -258,7 +246,6 @@
                     Exploring knowledge and developing solutions
                     for real-world challenges.
                 </p>
-
             </div>
 
         </div>
@@ -266,7 +253,6 @@
     </div>
 
 </section>
-
 
 
 <!-- ================= CAMPUS LIFE ================= -->
@@ -280,77 +266,62 @@
         <h1>More Than an Academic Experience</h1>
 
         <p>
-            University life is also about people, experiences,
+            University life also includes people, experiences,
             friendships and discovering new perspectives.
         </p>
 
     </div>
 
-
     <div class="life-row">
-
 
         <div class="life-card">
 
-            <img src="studentlife.jpg"
-                 alt="Students at Ajou University">
+            <img src="studentlife.jpg" alt="Student life image">
 
             <div>
-
                 <h3>Student Life</h3>
 
                 <p>
-                    Experience campus activities, events and
-                    everyday moments with fellow students.
+                    Campus activities, events and everyday
+                    experiences with fellow students.
                 </p>
-
             </div>
 
         </div>
 
-
         <div class="life-card">
 
-            <img src="studentlife1.jpg"
-                 alt="Ajou University students">
+            <img src="studentlife1.jpg" alt="University community image">
 
             <div>
-
                 <h3>Community</h3>
 
                 <p>
-                    Build connections and experience a diverse
-                    university community.
+                    Connections and experiences within a
+                    diverse university community.
                 </p>
-
             </div>
 
         </div>
-
 
         <div class="life-card">
 
-            <img src="studentlife3.jpg"
-                 alt="Ajou University student event">
+            <img src="studentlife3.jpg" alt="Student event image">
 
             <div>
-
                 <h3>Memories</h3>
 
                 <p>
-                    Discover experiences that make university
+                    Experiences that can make university
                     life memorable.
                 </p>
-
             </div>
 
         </div>
-
 
     </div>
 
 </section>
-
 
 
 <!-- ================= LOCATION ================= -->
@@ -359,34 +330,31 @@
 
     <div class="location-text">
 
-        <span>OUR LOCATION</span>
+        <span>LOCATION</span>
 
         <h1>Located in Suwon, South Korea</h1>
 
         <p>
             Ajou University's main campus is located in Suwon,
-            approximately 30 kilometers south of Seoul. Its
-            location provides access to a major metropolitan
+            approximately 30 kilometers south of Seoul.
+            Its location provides access to a major metropolitan
             area while maintaining a dedicated university
             campus environment.
         </p>
 
         <a href="campus.html" class="blue-btn">
-            EXPLORE OUR CAMPUS
+            EXPLORE CAMPUS INFORMATION
         </a>
 
     </div>
 
-
     <div class="location-image">
 
-        <img src="campuswide2.jpg"
-             alt="Ajou University campus">
+        <img src="campuswide2.jpg" alt="Campus view">
 
     </div>
 
 </section>
-
 
 
 <!-- ================= CTA ================= -->
@@ -395,14 +363,15 @@
 
     <div>
 
-        <h1>Discover More About Ajou</h1>
+        <h1>Explore More Information</h1>
 
         <p>
-            Explore our programs, campus and opportunities.
+            Browse the academic topics and campus information
+            presented in this student project.
         </p>
 
         <a href="programs.html" class="hero-btn">
-            EXPLORE PROGRAMS
+            EXPLORE ACADEMIC TOPICS
         </a>
 
     </div>
@@ -410,17 +379,16 @@
 </section>
 
 
-
 <!-- ================= FOOTER ================= -->
 
 <section class="footer">
 
-    <h4>Ajou University</h4>
+    <h4>Ajou University — Independent Student Project</h4>
 
     <p>
-        Knowledge, innovation and global opportunities.
+        An educational website created independently by a student.
+        This project is not affiliated with or endorsed by Ajou University.
     </p>
-
 
     <div class="footer-links">
 
@@ -432,46 +400,35 @@
 
     </div>
 
-
-    <div class="icons">
-
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-
-    </div>
-
+    <p class="official-link">
+        Official university website:
+        <a href="https://www.ajou.ac.kr/en/" target="_blank" rel="noopener noreferrer">
+            ajou.ac.kr
+        </a>
+    </p>
 
     <p class="copyright">
-
-        Made with
-        <i class="fa-solid fa-heart"></i>
-        for Ajou University
-
+        Independent educational project
     </p>
 
 </section>
-
 
 
 <!-- ================= JAVASCRIPT ================= -->
 
 <script>
 
-    var navLinks = document.getElementById("navLinks");
+    const navLinks = document.getElementById("navLinks");
 
-    function showMenu(){
+    function showMenu() {
         navLinks.style.right = "0";
     }
 
-    function hideMenu(){
+    function hideMenu() {
         navLinks.style.right = "-200px";
     }
 
 </script>
 
-
 </body>
-
 </html>

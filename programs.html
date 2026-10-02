@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,18 +6,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="An independent student-created educational project exploring computer engineering, artificial intelligence, software engineering, and technology-related academic fields.">
+
+    <meta name="robots" content="index, follow">
+
     <link rel="stylesheet" href="programs.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 
-    <title>Programs | Ajou University</title>
+    <title>Technology & Academic Fields | Independent Student Project</title>
 </head>
 
 <body>
+
+<!-- ================= PROJECT DISCLOSURE ================= -->
+
+<div class="project-notice">
+
+    <strong>Independent Student Project</strong>
+
+    <p>
+        This website is an independent educational project created by a student.
+        It is not affiliated with, endorsed by, or operated by Ajou University.
+        The academic topics presented here are general educational information
+        and are not an official list of university programs or courses.
+    </p>
+
+    <a href="https://www.ajou.ac.kr/en/" target="_blank" rel="noopener noreferrer">
+        Visit Ajou University's Official Website
+    </a>
+
+</div>
+
 
 <!-- ================= HERO ================= -->
 
@@ -24,36 +50,35 @@
 
     <nav>
 
-        <a href="index.html">
-            <img class="logo" src="AjouLogo1.png" alt="Ajou University">
+        <a href="index.html" aria-label="Project home">
+            <img class="logo" src="AjouLogo1.png" alt="Ajou University logo used in an independent student project">
         </a>
 
         <div class="nav-links" id="navLinks">
 
-            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <i class="fa fa-times" onclick="hideMenu()" aria-label="Close navigation"></i>
 
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="programs.html">PROGRAMS</a></li>
+                <li><a href="programs.html">ACADEMIC FIELDS</a></li>
                 <li><a href="campus.html">CAMPUS</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
 
         </div>
 
-        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <i class="fa fa-bars" onclick="showMenu()" aria-label="Open navigation"></i>
 
     </nav>
 
-
     <div class="programs-title">
 
-        <h1>Programs at Ajou</h1>
+        <h1>Explore Technology Fields</h1>
 
         <p>
-            Explore technology, innovation and engineering
-            through an education built for the future.
+            Discover computing, software, engineering and
+            artificial intelligence through this educational project.
         </p>
 
     </div>
@@ -67,14 +92,14 @@
 
     <div class="section-title">
 
-        <span>EXPLORE OUR PROGRAMS</span>
+        <span>EXPLORE ACADEMIC FIELDS</span>
 
         <h1>Learn. Build. Innovate.</h1>
 
         <p>
-            Discover academic fields that combine knowledge,
-            practical learning and technology to prepare students
-            for a changing world.
+            Explore academic fields that combine knowledge,
+            practical learning and technology to address
+            challenges in a changing world.
         </p>
 
     </div>
@@ -89,10 +114,9 @@
     <div class="program-image">
 
         <img src="computerEngineering.jpg"
-             alt="Computer Engineering students">
+             alt="Computer engineering and computing technology">
 
     </div>
-
 
     <div class="program-text">
 
@@ -107,16 +131,15 @@
         </p>
 
         <p>
-            Students can explore areas such as computer systems,
+            Areas within this field include computer systems,
             software development, networks, embedded systems
             and intelligent technologies.
         </p>
 
-
         <div class="program-points">
 
             <div>
-                <i class="fa-solid fa-microchip"></i>
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
 
                 <div>
                     <h3>Computing Systems</h3>
@@ -128,9 +151,8 @@
                 </div>
             </div>
 
-
             <div>
-                <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
 
                 <div>
                     <h3>Software Development</h3>
@@ -142,9 +164,8 @@
                 </div>
             </div>
 
-
             <div>
-                <i class="fa-solid fa-network-wired"></i>
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
 
                 <div>
                     <h3>Connected Technology</h3>
@@ -170,10 +191,9 @@
     <div class="program-image">
 
         <img src="artificialIntelligence.jpg"
-             alt="Artificial Intelligence research">
+             alt="Artificial intelligence and machine learning technology">
 
     </div>
-
 
     <div class="program-text">
 
@@ -188,16 +208,14 @@
         </p>
 
         <p>
-            Students can explore concepts related to machine
-            learning, data, intelligent systems and emerging
-            technologies.
+            This field includes machine learning, data analysis,
+            intelligent systems and emerging technologies.
         </p>
-
 
         <div class="program-points">
 
             <div>
-                <i class="fa-solid fa-brain"></i>
+                <i class="fa-solid fa-brain" aria-hidden="true"></i>
 
                 <div>
                     <h3>Machine Learning</h3>
@@ -209,9 +227,8 @@
                 </div>
             </div>
 
-
             <div>
-                <i class="fa-solid fa-chart-line"></i>
+                <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
 
                 <div>
                     <h3>Data & Intelligence</h3>
@@ -223,9 +240,8 @@
                 </div>
             </div>
 
-
             <div>
-                <i class="fa-solid fa-robot"></i>
+                <i class="fa-solid fa-robot" aria-hidden="true"></i>
 
                 <div>
                     <h3>Intelligent Systems</h3>
@@ -251,10 +267,9 @@
     <div class="program-image">
 
         <img src="softwareEngineering.jpg"
-             alt="Software Engineering students coding">
+             alt="Software development and programming">
 
     </div>
-
 
     <div class="program-text">
 
@@ -265,20 +280,19 @@
         <p>
             Software Engineering focuses on designing,
             developing and maintaining software systems
-            that people use every day.
+            used in everyday life.
         </p>
 
         <p>
-            Students develop programming, database,
-            web development and software design skills
-            through practical projects.
+            The field involves programming, databases,
+            web development and software design through
+            practical projects.
         </p>
-
 
         <div class="program-points">
 
             <div>
-                <i class="fa-solid fa-laptop-code"></i>
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
 
                 <div>
                     <h3>Programming</h3>
@@ -290,9 +304,8 @@
                 </div>
             </div>
 
-
             <div>
-                <i class="fa-solid fa-database"></i>
+                <i class="fa-solid fa-database" aria-hidden="true"></i>
 
                 <div>
                     <h3>Databases & Web</h3>
@@ -304,15 +317,14 @@
                 </div>
             </div>
 
-
             <div>
-                <i class="fa-solid fa-sitemap"></i>
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
 
                 <div>
                     <h3>Software Design</h3>
 
                     <p>
-                        Learn how complex software systems are
+                        Learn how software systems are
                         planned, developed and improved.
                     </p>
                 </div>
@@ -332,10 +344,9 @@
     <div class="project-image">
 
         <img src="engineeringProject.jpg"
-             alt="Students working on an engineering project">
+             alt="Engineering project and hands-on learning">
 
     </div>
-
 
     <div class="project-text">
 
@@ -345,38 +356,35 @@
 
         <p>
             Technology is best understood by putting knowledge
-            into practice. Projects give students opportunities
+            into practice. Projects provide opportunities
             to experiment, collaborate and develop solutions.
         </p>
 
         <p>
-            Through hands-on learning, students can connect
-            theoretical knowledge with practical challenges
-            and gain experience working on technology-based
-            projects.
+            Hands-on learning connects theoretical knowledge
+            with practical challenges and encourages experience
+            with technology-based projects.
         </p>
 
-        <h3 class="project-subtitle">What You'll Develop</h3>
-
+        <h3 class="project-subtitle">Skills to Explore</h3>
 
         <div class="project-points">
 
             <div>
-                <i class="fa-solid fa-users"></i>
+                <i class="fa-solid fa-users" aria-hidden="true"></i>
 
                 <div>
                     <h3>Teamwork</h3>
 
                     <p>
-                        Work with other students and learn
+                        Work with others and learn
                         through collaboration.
                     </p>
                 </div>
             </div>
 
-
             <div>
-                <i class="fa-solid fa-lightbulb"></i>
+                <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
 
                 <div>
                     <h3>Problem Solving</h3>
@@ -388,9 +396,8 @@
                 </div>
             </div>
 
-
             <div>
-                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
 
                 <div>
                     <h3>Practical Skills</h3>
@@ -420,13 +427,11 @@
         <h1>Where Ideas Meet Technology</h1>
 
         <p>
-            Explore an environment where students and researchers
-            can investigate new ideas and contribute to technological
-            development.
+            Explore how students and researchers can investigate
+            new ideas and contribute to technological development.
         </p>
 
     </div>
-
 
     <div class="innovation-row">
 
@@ -437,12 +442,11 @@
 
         </div>
 
-
         <div class="innovation-content">
 
             <div class="innovation-box">
 
-                <i class="fa-solid fa-lightbulb"></i>
+                <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
 
                 <div>
                     <h3>Innovation</h3>
@@ -455,10 +459,9 @@
 
             </div>
 
-
             <div class="innovation-box">
 
-                <i class="fa-solid fa-flask"></i>
+                <i class="fa-solid fa-flask" aria-hidden="true"></i>
 
                 <div>
                     <h3>Research</h3>
@@ -471,17 +474,16 @@
 
             </div>
 
-
             <div class="innovation-box">
 
-                <i class="fa-solid fa-users"></i>
+                <i class="fa-solid fa-users" aria-hidden="true"></i>
 
                 <div>
                     <h3>Collaboration</h3>
 
                     <p>
-                        Work with others to exchange ideas and
-                        create meaningful solutions.
+                        Exchange ideas and work together
+                        to develop meaningful solutions.
                     </p>
                 </div>
 
@@ -507,8 +509,9 @@
             engineering and innovation can take you.
         </p>
 
-        <a href="contact.html" class="hero-btn">
-            CONTACT AJOU
+        <a href="https://www.ajou.ac.kr/en/" class="hero-btn"
+           target="_blank" rel="noopener noreferrer">
+            VISIT OFFICIAL UNIVERSITY WEBSITE
         </a>
 
     </div>
@@ -520,59 +523,52 @@
 
 <section class="footer">
 
-    <h4>Ajou University</h4>
+    <h4>Ajou University — Independent Student Project</h4>
 
     <p>
-        Knowledge, innovation and global opportunities.
+        An educational website created independently by a student.
+        This project is not affiliated with or endorsed by Ajou University.
     </p>
-
 
     <div class="footer-links">
 
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="programs.html">Programs</a>
+        <a href="programs.html">Academic Fields</a>
         <a href="campus.html">Campus</a>
         <a href="contact.html">Contact</a>
 
     </div>
 
-
-    <div class="icons">
-
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-
-    </div>
-
+    <p class="official-link">
+        Official university website:
+        <a href="https://www.ajou.ac.kr/en/" target="_blank" rel="noopener noreferrer">
+            ajou.ac.kr
+        </a>
+    </p>
 
     <p class="copyright">
-
-        Made with
-        <i class="fa-solid fa-heart"></i>
-        for Ajou University
-
+        Independent educational project
     </p>
 
 </section>
 
 
+<!-- ================= JAVASCRIPT ================= -->
+
 <script>
 
-    var navLinks = document.getElementById("navLinks");
+    const navLinks = document.getElementById("navLinks");
 
-    function showMenu(){
+    function showMenu() {
         navLinks.style.right = "0";
     }
 
-    function hideMenu(){
+    function hideMenu() {
         navLinks.style.right = "-200px";
     }
 
 </script>
-
 
 </body>
 </html>

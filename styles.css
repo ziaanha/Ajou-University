@@ -1191,3 +1191,42 @@ p{
     }
 
 }
+
+
+/* ================= PROJECT NOTICE ================= */
+
+.project-notice {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background: #f0f6ff;
+    border: 1px solid #cfe0ff;
+    border-radius: 10px;
+}
+
+.project-notice h3 {
+    text-align: center;
+    color: #2373F4;
+    margin-bottom: 10px;
+}
+
+.project-notice p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.project-notice a {
+    color: #2373F4;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .project-notice {
+        width: 95%;
+        padding: 15px;
+    }
+}
